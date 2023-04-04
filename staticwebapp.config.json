@@ -8,7 +8,7 @@
     },
     {
       "route": "/login",
-      "rewrite": "/.auth/login/element-okta"
+      "rewrite": "/.auth/login/aad"
     },
     {
       "route": "/.auth/login/twitter",
