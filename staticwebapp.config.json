@@ -8,7 +8,7 @@
     },
     {
       "route": "/login",
-      "rewrite": "/.auth/login/aad"
+      "rewrite": "/.auth/login/element-okta"
     },
     {
       "route": "/.auth/login/twitter",
@@ -107,5 +107,27 @@
   },
   "mimeTypes": {
     ".json": "text/json"
+  }
+  "auth": {
+    "identityProviders": {
+      "customOpenIdConnectProviders": {
+        "element-okta": {
+          "registration": {
+            "clientIdSettingName": "OKTA_CLIENT_ID",
+            "clientCredential": {
+              "clientSecretSettingName": "OKTA_CLIENT_SECRET"
+            },
+            "openIdConnectConfiguration": {
+              "wellKnownOpenIdConfiguration": "https://element.okta.com/.well-known/openid-configuration"
+            }
+          },
+          "login": {
+            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+            "scopes": [],
+            "loginParameterNames": []
+          }
+        }
+      }
+    }
   }
 }
