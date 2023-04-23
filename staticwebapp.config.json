@@ -24,7 +24,7 @@
     },
     {
       "route": "/api/ExecSAMSetup",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "editor"]
     },
     {
       "route": "/api/AddStandardsDeploy",
@@ -32,11 +32,11 @@
     },
     {
       "route": "/LogoutRedirect",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "/404",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "/api/RemoveStandard",
@@ -44,11 +44,11 @@
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "level2", "level1"]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "level2", "level1"]
     },
     {
       "route": "/api/ExecSendPush",
@@ -60,7 +60,7 @@
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "level2", "level1"]
     },
     {
       "route": "/api/Remove*",
@@ -112,15 +112,15 @@
     },
     {
       "route": "/",
-      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "/api/Public*",
-      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "readonly", "reader", "level2", "level1"]
+      "allowedRoles": ["admin", "editor", "readonly", "reader", "level2", "level1"]
     }
   ],
   "navigationFallback": {
