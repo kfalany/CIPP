@@ -27,7 +27,7 @@
       "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
-      "route": "/favicon-32x32.png"
+      "route": "/favicon-32x32.png",
       "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
