@@ -23,18 +23,6 @@
       "redirect": "/.auth/logout?post_logout_redirect_uri=/LogoutRedirect"
     },
     {
-      "route": "/apple-touch-icon.png",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
-    },
-    {
-      "route": "/favicon-32x32.png",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
-    },
-    {
-      "route": "/favico.ico",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
-    },
-    {
       "route": "/api/ExecSAMSetup",
       "allowedRoles": ["admin"]
     },
@@ -44,11 +32,11 @@
     },
     {
       "route": "/LogoutRedirect",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "inside", "field"]
     },
     {
       "route": "/404",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "inside", "field"]
     },
     {
       "route": "/api/RemoveStandard",
@@ -56,15 +44,15 @@
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "inside", "field"]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "inside", "field"]
     },
     {
       "route": "/api/ExecSendPush",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "inside", "field"]
     },
     {
       "route": "/api/ExecExcludeTenant",
@@ -72,15 +60,15 @@
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "inside", "field"]
     },
     {
       "route": "/api/Remove*",
-      "allowedRoles": ["admin", "level2", "level1"]
+      "allowedRoles": ["admin", "inside", "field"]
     },
     {
       "route": "/cipp/*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin"]
     },
     {
       "route": "/tenant/standards/*",
@@ -92,47 +80,47 @@
     },
     {
       "route": "/tenant/conditional/deploy*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/tenant/conditional/add-template*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/endpoint/applications/add*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/endpoint/autopilot/add-status-page*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/endpoint/MEM/add-policy*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/email/transport/deploy-rules*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/email/connectors/deploy-connector*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
      {
       "route": "/email/spamfilter/deploy*",
-      "allowedRoles": ["admin", "level2"]
+      "allowedRoles": ["admin", "field"]
     },
     {
       "route": "/",
-      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "field", "inside"]
     },
     {
       "route": "/api/Public*",
-      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
+      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "field", "inside"]
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "readonly", "reader", "level2", "level1"]
+      "allowedRoles": ["admin", "readonly", "reader", "field", "inside"]
     }
   ],
   "navigationFallback": {
