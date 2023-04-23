@@ -68,7 +68,7 @@
     },
     {
       "route": "/cipp/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "level2"]
     },
     {
       "route": "/tenant/standards/*",
