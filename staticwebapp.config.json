@@ -24,7 +24,7 @@
     },
     {
       "route": "/api/ExecSAMSetup",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": ["admin"]
     },
     {
       "route": "/api/AddStandardsDeploy",
@@ -32,11 +32,11 @@
     },
     {
       "route": "/LogoutRedirect",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "/404",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "/api/RemoveStandard",
@@ -44,15 +44,15 @@
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "level2", "level1"]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "level2", "level1"]
     },
     {
       "route": "/api/ExecSendPush",
-      "allowedRoles": ["admin", "editor", "readonly"]
+      "allowedRoles": ["admin", "level2", "level1"]
     },
     {
       "route": "/api/ExecExcludeTenant",
@@ -60,11 +60,11 @@
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "level2", "level1"]
     },
     {
       "route": "/api/Remove*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "level2", "level1"]
     },
     {
       "route": "/cipp/*",
@@ -75,16 +75,52 @@
       "allowedRoles": ["admin"]
     },
     {
+      "route:" "/tenant/administration/alertswizard/*",
+      "allowedRoles": ["admin"]
+    },
+    {
+      "route:" "/tenant/conditional/deploy*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
+      "route:" "/tenant/conditional/add-template*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
+      "route:" "/endpoint/applications/add*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
+      "route:" "/endpoint/autopilot/add-status-page*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
+      "route:" "/endpoint/MEM/add-policy*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
+      "route:" "/email/transport/deploy-rules*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
+      "route:" "/email/connectors/deploy-connector*",
+      "allowedRoles": ["admin", "level2"]
+    },
+     {
+      "route:" "/email/spamfilter/deploy*",
+      "allowedRoles": ["admin", "level2"]
+    },
+    {
       "route": "/",
-      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "/api/Public*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
+      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "level2", "level1"]
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader"]
+      "allowedRoles": ["admin", "readonly", "reader", "level2", "level1"]
     }
   ],
   "navigationFallback": {
