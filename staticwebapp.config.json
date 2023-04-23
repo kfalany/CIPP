@@ -32,11 +32,11 @@
     },
     {
       "route": "/LogoutRedirect",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "inside", "field"]
+      "allowedRoles": ["admin", "inside", "field", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/404",
-      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "inside", "field"]
+      "allowedRoles": ["admin", "inside", "field", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/api/RemoveStandard",
@@ -60,7 +60,7 @@
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "inside", "field"]
+      "allowedRoles": ["admin", "editor"]
     },
     {
       "route": "/api/Remove*",
@@ -75,52 +75,16 @@
       "allowedRoles": ["admin"]
     },
     {
-      "route": "/tenant/administration/alertswizard/*",
-      "allowedRoles": ["admin"]
-    },
-    {
-      "route": "/tenant/conditional/deploy*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
-      "route": "/tenant/conditional/add-template*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
-      "route": "/endpoint/applications/add*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
-      "route": "/endpoint/autopilot/add-status-page*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
-      "route": "/endpoint/MEM/add-policy*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
-      "route": "/email/transport/deploy-rules*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
-      "route": "/email/connectors/deploy-connector*",
-      "allowedRoles": ["admin", "field"]
-    },
-     {
-      "route": "/email/spamfilter/deploy*",
-      "allowedRoles": ["admin", "field"]
-    },
-    {
       "route": "/",
-      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "field", "inside"]
+      "allowedRoles": ["admin", "inside", "field", "readonly", "reader", "authenticated", "anonymous"]
     },
     {
       "route": "/api/Public*",
-      "allowedRoles": ["admin", "readonly", "reader", "authenticated", "anonymous", "field", "inside"]
+      "allowedRoles": ["admin", "inside", "field", "readonly", "reader", "authenticated", "anonymous"]
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "readonly", "reader", "field", "inside"]
+      "allowedRoles": ["admin", "inside", "field", "readonly", "reader"]
     }
   ],
   "navigationFallback": {
