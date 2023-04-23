@@ -31,6 +31,10 @@
       "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
     },
     {
+      "route": "/favico.ico",
+      "allowedRoles": ["admin", "readonly", "authenticated", "anonymous", "level2", "level1"]
+    },
+    {
       "route": "/api/ExecSAMSetup",
       "allowedRoles": ["admin"]
     },
