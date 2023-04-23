@@ -75,39 +75,39 @@
       "allowedRoles": ["admin"]
     },
     {
-      "route:" "/tenant/administration/alertswizard/*",
+      "route": "/tenant/administration/alertswizard/*",
       "allowedRoles": ["admin"]
     },
     {
-      "route:" "/tenant/conditional/deploy*",
+      "route": "/tenant/conditional/deploy*",
       "allowedRoles": ["admin", "level2"]
     },
     {
-      "route:" "/tenant/conditional/add-template*",
+      "route": "/tenant/conditional/add-template*",
       "allowedRoles": ["admin", "level2"]
     },
     {
-      "route:" "/endpoint/applications/add*",
+      "route": "/endpoint/applications/add*",
       "allowedRoles": ["admin", "level2"]
     },
     {
-      "route:" "/endpoint/autopilot/add-status-page*",
+      "route": "/endpoint/autopilot/add-status-page*",
       "allowedRoles": ["admin", "level2"]
     },
     {
-      "route:" "/endpoint/MEM/add-policy*",
+      "route": "/endpoint/MEM/add-policy*",
       "allowedRoles": ["admin", "level2"]
     },
     {
-      "route:" "/email/transport/deploy-rules*",
+      "route": "/email/transport/deploy-rules*",
       "allowedRoles": ["admin", "level2"]
     },
     {
-      "route:" "/email/connectors/deploy-connector*",
+      "route": "/email/connectors/deploy-connector*",
       "allowedRoles": ["admin", "level2"]
     },
      {
-      "route:" "/email/spamfilter/deploy*",
+      "route": "/email/spamfilter/deploy*",
       "allowedRoles": ["admin", "level2"]
     },
     {
