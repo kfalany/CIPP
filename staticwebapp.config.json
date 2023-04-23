@@ -24,7 +24,7 @@
     },
     {
       "route": "/api/ExecSAMSetup",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "inside", "field", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/api/AddStandardsDeploy",
